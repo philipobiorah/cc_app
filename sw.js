@@ -15,7 +15,7 @@ self.addEventListener('install', (event) => {
                 'main.css',
                 'cache-polyfill.js',
                 'https://free.currencyconverterapi.com/api/v5/currencies',
-                'https://free.currencyconverterapi.com/api/v5/countries'
+                // 'https://free.currencyconverterapi.com/api/v5/countries'
             ]);
         })
     )
