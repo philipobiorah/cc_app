@@ -9,7 +9,7 @@ self.addEventListener('install', (event) => {
         //I cache the currencies
         caches.open(cacheName).then((cache) => {
             return cache.addAll([
-                '/',
+                'https://philipobiorah.github.io/cc_app/',
                 'index.html',
                 'main.js',
                 'main.css',
