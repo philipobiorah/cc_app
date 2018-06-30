@@ -1,4 +1,4 @@
-importScripts('cache-polyfill.js');
+// importScripts('cache-polyfill.js');
 
 
 const cacheName = 'ccApp_v2';
