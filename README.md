@@ -1,5 +1,5 @@
 # cc_app :  Currency Converter Application   
-| An ALC 3.0 #7DaysofCode Challenge Project for Google Africa Challenge Scholarship: Mobile Web Specialist by Philip Obiorah 
+| An ALC 3.0 #7DaysofCode Challenge Project for Google Africa Challenge Scholarship: Mobile Web Specialist Track by Philip Obiorah 
 
 Project name: Currency Converter [ published at https://philipobiorah.github.io/cc_app/ ]
 
