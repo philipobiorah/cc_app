@@ -6,7 +6,7 @@ Project name: Currency Converter [ published at https://philipobiorah.github.io/
 The project takes advantage of the functionalities Freecurrencyconverterapi provides. 
 - Freecurrencyconverterapi is an API that converts one currency to another and returns result in json format.
 
-The application must make use of the following:
+The application implements the following:
                       - Service Worker
                       - Cache API
                       - IndexedDB
@@ -17,10 +17,10 @@ Limits of the Free API:   Number of Requests per Hour: 100
 
 Application Functions:
    1.  Users can select currencies to be converted from and to
-   2.  The application Convert currencies while the application is online or offline
+   2.  The application  can convert currencies while the application is online or offline
    
 NOTA BENE: The application works 100% offline with a few selection of currencies that would allow for 100 requests per hour
 using the Free Currency Converter API. (https://free.currencyconverterapi.com/)  
 
 
-Appreciation: Many Thanks to Google, Udacity, Andela Learning Commmunity, Facilitators and Team mates. 
+Appreciation: Google, Udacity, Andela Learning Commmunity, Facilitators and Team mates. 
