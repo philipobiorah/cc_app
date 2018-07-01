@@ -1,7 +1,7 @@
-# cc_app :  Currency Converter Application
+# cc_app :  Currency Converter Application   
 | An ALC 3.0 #7DaysofCode Challenge Project for Google Africa Challenge Scholarship: Mobile Web Specialist by Philip Obiorah 
 
-Project name: Currency Converter 
+Project name: Currency Converter [ published at https://philipobiorah.github.io/cc_app/ ]
 
 The project takes advantage of the functionalities Freecurrencyconverterapi provides. 
 - Freecurrencyconverterapi is an API that converts one currency to another and returns result in json format.
