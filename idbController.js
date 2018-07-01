@@ -1,5 +1,5 @@
 
-export const databaseName = 'cc_app_db_v3';
+export const databaseName = 'cc_app_db_v3';          //Database name
 
 export default class IDBManager{
 
@@ -7,9 +7,7 @@ export default class IDBManager{
         this._idbPromise = this.setupDatabase();
     }
 
-    setupDatabase(){
-        // If the browser doesn't support service worker,
-        // we don't care about having a database
+    setupDatabase(){    // Check for browser support
         if (!navigator.serviceWorker) {
             return Promise.resolve();
         }
@@ -22,7 +20,7 @@ export default class IDBManager{
         });
     }
 
-    //Save a query in index db
+    //Save query in indexdb
     saveQueryInDatabase(query, value){
 
         this._idbPromise.then((db) => {
@@ -36,7 +34,7 @@ export default class IDBManager{
         })
     }
 
-    //get value from database
+    //obtain value from database
     getQueryValueByID(query, callBack){
         //Our ID id query in idb 
         this._idbPromise.then(db => {
