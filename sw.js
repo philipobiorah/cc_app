@@ -1,12 +1,12 @@
-// importScripts('cache-polyfill.js');
+importScripts('cache-polyfill.js');
 
 
-const cacheName = 'ccApp_v2';
+const cacheName = 'ccApp_v3';
 
 self.addEventListener('install', (event) => {
 
     event.waitUntil(
-        //I cache the currencies
+        //Cache important stuffus
         caches.open(cacheName).then((cache) => {
             return cache.addAll([
                 'https://philipobiorah.github.io/cc_app/',
@@ -36,9 +36,6 @@ self.addEventListener('fetch', (event) => {
         })
     )
     
-    // if(url == 'https://free.currencyconverterapi.com/api/v5/currencies'){
-    //     console.log("Intercepted");
-    // }
-    
+  
 });
 

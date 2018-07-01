@@ -284,10 +284,10 @@
     };
   });
 
-  var exp = {
+  let exp = {
     open: function(name, version, upgradeCallback) {
-      var p = promisifyRequestCall(indexedDB, 'open', [name, version]);
-      var request = p.request;
+      let p = promisifyRequestCall(indexedDB, 'open', [name, version]);
+      let request = p.request;
 
       if (request) {
         request.onupgradeneeded = function(event) {

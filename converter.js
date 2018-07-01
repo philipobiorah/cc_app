@@ -1,4 +1,4 @@
-import IDBManager from './idbManager.js';
+import IDBManager from './idbController.js';
 
 export let lastQuery = '';
 

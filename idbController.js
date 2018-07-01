@@ -1,5 +1,5 @@
 
-export const databaseName = 'cc_app_db_v2';
+export const databaseName = 'cc_app_db_v3';
 
 export default class IDBManager{
 
