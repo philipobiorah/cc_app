@@ -1,12 +1,11 @@
 importScripts('cache-polyfill.js');
 
+const cacheName = 'ccApp_v3';          //cache Name declaration
 
-const cacheName = 'ccApp_v3';
-
-self.addEventListener('install', (event) => {
+self.addEventListener('install', (event) => {             //Install event for service worker
 
     event.waitUntil(
-        //Cache important stuffus
+        //Cache important resources
         caches.open(cacheName).then((cache) => {
             return cache.addAll([
                 'https://philipobiorah.github.io/cc_app/',
@@ -21,14 +20,12 @@ self.addEventListener('install', (event) => {
     )
 });
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', (event) => {        //Fetch event for service worker
 
-    let url = event.request.url;
-    
-    
+    let url = event.request.url; 
 
     event.respondWith(
-        //Respond with the cached response or if no response is saved,
+        // If no response is saved, respond with the cached response or,
         //respond with result from the network.
         caches.match(event.request).then((response) => {
             if(response) return response;
