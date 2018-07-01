@@ -6,13 +6,13 @@ export default class Converter
 {
     constructor(idbManager)
     {
-        //the idb database to retrieve and save data to and from CACHE database
+        //IDB database to retrieve form and save data to
         this._idbManager = idbManager;
     }
 
     getAllCurrencies(callBack)
-    {
-        fetch("https://free.currencyconverterapi.com/api/v5/currencies")
+    {                
+        fetch("https://free.currencyconverterapi.com/api/v5/currencies")   //fetch the currencies using the free API
         .then(response => callBack(null, response))
         .catch(error => callBack(error, null));
     }
@@ -25,7 +25,7 @@ export default class Converter
         const query = fromCurrency + '_' + toCurrency;
         lastQuery = query;
 
-        //we build the URL
+        //Construct the URL
         const url = `https://free.currencyconverterapi.com/api/v5/convert?q=${query}&compact=ultra`;
 
         //Inquire IDB for the objec'ts query
@@ -36,7 +36,7 @@ export default class Converter
                 return;
             }
 
-            //if the value was not found in idb, query the internet
+            //if the value was not found in index db, go online
             if(!value){
 
                 fetch(url)
@@ -55,7 +55,7 @@ export default class Converter
                         });
                 });                
             }
-            //If the value was found in idb
+            //If the value was found in indexdb
             else{
                 //get the value of the query
                 let val = value['value'];
